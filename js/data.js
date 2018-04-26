@@ -1,38 +1,117 @@
-const blank =`<h2> Welcome to Xi Pricer </h2>
-  <h3 class='alt' style='margin-top:10px 0 0 0;'>Select any configuration to begin</h3>
-  <hr>
+const blank =`
+  <div class='card' id='selection'>
+    <h2> Welcome to Xi Pricer </h2>
+    <h3 class='alt' style='margin-top:10px 0 0 0;'>Select any configuration to begin</h3>
+    <hr>
 
-  <form>
-    <h3> <input type="radio" id='config' name='select' value='0'/> Small environment</h3>
-    <p class='alignment alt'>10 protected Virtual Machines, VPN and 1 limited time test failover every quarter</p>
+    <form>
+      <h3> <input type="radio" id='config' name='select' value='0'/> Small environment</h3>
+      <p class='alignment alt'>10 protected Virtual Machines, VPN and 1 limited time test failover every quarter</p>
 
-    <h3> <input type="radio" id='config' name='select' value='1'/> Medium environment (Mid-market customer) </h3>
-    <p class='alignment alt'>50 protected Virtual Machines, 2 VMs running 24X7, VPN, 2 Public IPs and 1 test failover per quarter</p>
+      <h3> <input type="radio" id='config' name='select' value='1'/> Medium environment (Mid-market customer) </h3>
+      <p class='alignment alt'>50 protected Virtual Machines, 2 VMs running 24X7, VPN, 2 Public IPs and 1 test failover per quarter</p>
 
-    <h3> <input type="radio" id='config' name='select' value='2'/> Large environment (Enterprise customer)</h3>
-    <p class='alignment alt'>200 Protected Virtual Machines with 20 mission-critical VMs, 10 VMs running 24X7, Direct Connect, 10 Public IPs, and long running test failovers every quarter </p>
+      <h3> <input type="radio" id='config' name='select' value='2'/> Large environment (Enterprise customer)</h3>
+      <p class='alignment alt'>200 Protected Virtual Machines with 20 mission-critical VMs, 10 VMs running 24X7, Direct Connect, 10 Public IPs, and long running test failovers every quarter </p>
 
-    <h3> <input type="radio" id='config' name='select' value='3'/> Custom Configuration</h3>
-    <p class='alignment alt'>Select your own options and configurations</p>
-  </form>
-  <hr>
+      <h3> <input type="radio" id='config' name='select' value='3'/> Custom Configuration</h3>
+      <p class='alignment alt'>Select your own options and configurations</p>
+    </form>
+    <hr>
 
-  <button class='primary fw' id='continue'> Continue </button>
-`
+    <button class='primary fw' id='continue'> Continue </button>
+  </div>`
 
 const small =
-  `<h1> Xi Pricer 0</h1>`;
+  `<div class='card' id='selection'>
 
-const medium =
-  `<h1> Xi Pricer 1</h1>`;
+    <div class='section'>
+      <div class='section-title spc'>
+        <h3> <input type='checkbox' checked style='margin-right:8px;'/> Disaster Recovery </h3>
 
-const large =
-  `<h1> Xi Pricer 2</h1>`;
+      </div>
+      <div class='section-body instance'>
+        <span class='ln'> 300 VMs · Gold Protection</span></br>
+        <span class='ln alt'> 4 VCPU, 700 Ghz </span>
+      </div>
 
-const custom =
-  `<h1> Xi Pricer 3</h1>`;
+      <div class='section-body instance'>
+        <span class='ln'> 300 VMs · Gold Protection</span></br>
+        <span class='ln alt'> 4 VCPU, 700 Ghz </span>
+      </div>
+      
+      <div class='section-body'>
+        <span class='ln'><a class='edit' href="#">Add instance</a></span>
+      </div>
+    </div>
+    <hr class='sct-sep'>
 
+    <div class='section'>
+      <div class='section-title spc'>
+        <h3> <input type='checkbox' checked style='margin-right:8px;'/> Network </h3>
 
+      </div>
+      <div class='section-body'>
+        <span class='ln'> Direct Connect</span>
+      </div>
+      <div class='section-body'>
+        <span class='ln'> 5 Public addresses </span>
+      </div>
+
+      <div class='section-body'>
+        <span class='ln'><a href="#">Manage options</a></span>
+      </div>
+
+    </div>
+
+    <hr class='sct-sep'>
+    <div class='section'>
+      <div class='section-title spc'>
+        <h3> <input type='checkbox' checked style='margin-right:8px;'/> 24/7 VMs </h3>
+      </div>
+      <div class='section-body instance'>
+        <span class='ln'> 300 VMs</span></br>
+        <span class='ln alt'> 4 VCPU · 700 Ghz · 300HDD · 30 SSD </span>
+      </div>
+
+      <div class='section-body'>
+        <span class='ln'><a href="#">Add instance</a></span>
+      </div>
+    </div>
+
+  </div>`;
+
+const medium =`
+  <div class='card' id='selection'>
+    <h1> Xi Pricer 1</h1>
+  </div>`;
+
+const large =`
+  <div class='card' id='selection'>
+    <h1> Xi Pricer 2</h1>
+  </div>`;
+
+const custom =`
+  <div class='card' id='selection'>
+    <h1> Xi Pricer 3</h1>
+  </div>`;
+
+const payment =
+  `  <div class='card' style='margin-top: 20px;' id='selection'>
+      <div class='section'>
+        <div class='section-title spc'>
+          <h3> Payment method </h3>
+        </div>
+        <div class='d'>
+          <p class='ln'>
+          <input type='radio' name='pay'>  Pay as you go 12 months</p>
+          <input type='radio' name='pay'>  Pay as you go 36 months</p>
+          <input type='radio' name='pay'>  Minium Commitment</p>
+
+        </div>
+
+      </div>
+    </div>`;
 
 const tiers = [
   {
@@ -63,6 +142,7 @@ const tiers = [
     failover: 'and a maximum of 8 hours of failover every quarter, 3 days of Downtime in a year.'
   }
 ];
+
 const items = [
   { name: 'Disaster Recovery',
     elements:[

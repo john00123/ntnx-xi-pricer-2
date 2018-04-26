@@ -5,7 +5,7 @@
 @import '../css/popup';
 
 body, html{
-  @include flex(center, center, column);
+  @include flex(center, flex-start, column);
   @include font;
   background-color: $background-color-3;
   padding: 0;
@@ -35,7 +35,7 @@ h2{font:$h2; line-height:1.5; margin:0;}
 h3{font:$h3;}
 h4{font:$h4;}
 input[type='radio']{margin-right: 10px;}
-span{padding-left: 20px;}
+span{padding-left: 15px;}
 
 .primary{@include primary()}
 .secondary{@include secondary()}
@@ -51,8 +51,9 @@ header{
   }
 }
 
+
 article{
-  @include size(100%, 100%);
+  @include size(auto, 100%);
   @include flex(flex-start, center, row);
   padding: 30px;
 }
@@ -79,6 +80,7 @@ article{
 
 .section-body{
   margin-top: 10px;
+  margin-left: 10px;
   border-left: 2px solid $border-color-3;
   }
 
@@ -87,8 +89,31 @@ article{
   margin-top: -10px;
 }
 
+.instance:hover{
+  position: relative;
+  background-color: rbga(0,0,0,0.02);
+  cursor: pointer;
+  border-color: $border-color-2;
+
+  &::after{
+    content:'-';
+    background-color: $red-1;
+    height: 14px;
+    width: 14px;
+    @include flex(baseline, center,' ');
+    font-size: 25px;
+    border-radius: 4pc;
+    position: absolute;
+    right: 0;
+    top:10px;
+    font-weight: 500;
+    color:white;
+  }
+}
+
 #sidebar{
-  @include size(100%, 280px);
+  @include size(auto, 280px);
+  align-self: stretch;
 }
 
 #final-price{

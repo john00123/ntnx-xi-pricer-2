@@ -372,10 +372,38 @@ Popup
 }
 
 .popup-body .delete {
+  margin: 0;
+  border-radius: 4px;
+  padding: 11px 15px;
+  color: #FFFFFF;
+  font: 400 14px/10px "nutanix_soft", san-serif;
+  font-weight: 500;
+  border: none;
+  text-decoration: none;
+  background-color: #22A5F7;
+  outline: none;
   border-radius: 4px;
   border: none;
   margin-top: 20px;
   background-color: #F55656;
+}
+
+.popup-body .delete:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #1f88de;
+}
+
+.popup-body .delete:active {
+  color: #FFFFFF;
+  background-color: #1b6dc6;
+}
+
+.popup-body .delete span {
+  height: 10px;
+  display: block;
+  font-weight: 500;
+  line-height: 9pt;
 }
 
 .popup-body .delete:hover {
@@ -451,6 +479,35 @@ Popup
 
 .popup-body input[type="number"], .popup-body .term {
   margin-bottom: 10px !important;
+}
+
+.col3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.column input, #dropdown {
+  margin-top: 10px;
+}
+
+.text {
+  text-align: left;
+  width: 100%;
+}
+
+.text p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.text h3 {
+  margin: 0;
+}
+
+.column:not(:first-child) {
+  padding-left: 20px;
 }
 
 .banner {
@@ -719,7 +776,7 @@ select span {
 body, html {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   font: 400 14px/10px "nutanix_soft", san-serif;
   text-rendering: optimizeSpeed;
@@ -774,7 +831,7 @@ input[type='radio'] {
 }
 
 span {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .primary {
@@ -862,7 +919,7 @@ header svg {
 }
 
 article {
-  height: 100%;
+  height: auto;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -905,6 +962,7 @@ article {
 
 .section-body {
   margin-top: 10px;
+  margin-left: 10px;
   border-left: 2px solid #F2F4F6;
 }
 
@@ -913,10 +971,36 @@ article {
   margin-top: -10px;
 }
 
+.instance:hover {
+  position: relative;
+  background-color: rbga(0, 0, 0, 0.02);
+  cursor: pointer;
+  border-color: #D5DAE0;
+}
+
+.instance:hover::after {
+  content: '-';
+  background-color: #F55656;
+  height: 14px;
+  width: 14px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: " ";
+  font-size: 25px;
+  border-radius: 4pc;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-weight: 500;
+  color: white;
+}
+
 #sidebar {
-  height: 100%;
+  height: auto;
   width: 280px;
   box-sizing: border-box;
+  align-self: stretch;
 }
 
 #final-price {

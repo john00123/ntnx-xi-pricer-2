@@ -134,6 +134,7 @@ Popup
 
 
   .delete{
+    @include primary();
     border-radius: 4px;
     border: none;
     margin-top: 20px;
@@ -172,7 +173,6 @@ Popup
     }
   }
 
-
   .term{
     @include secondary;
     margin-top: 10px;
@@ -191,6 +191,30 @@ Popup
 
 }
 
+
+.col3{
+  @include flex(flex-start, space-between, row);
+}
+
+.column input, #dropdown{
+  margin-top:10px;
+}
+
+.text{
+  text-align: left;
+  width: 100%;
+  & p{
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  & h3{
+    margin: 0;
+  }
+}
+
+.column:not(:first-child){
+  padding-left:20px;
+}
 
 .banner{
   @include size(40px, 100%);
