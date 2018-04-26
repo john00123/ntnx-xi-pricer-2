@@ -41,8 +41,7 @@ const popupData ={
   //1 Network options
 
 `  <div class='network-option' style='width:100%'>
-    <h3><input type='checkbox' class='disable' checked> Include Network </h3>
-    <label>Num of Public IPs</label>
+    <label>Connection type</label>
     <select style="width:100%; margin:10px 0 30px 0;">
       <option>
         Direct Connect
