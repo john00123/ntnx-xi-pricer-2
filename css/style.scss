@@ -1,0 +1,101 @@
+//Comment for compiler
+@import '../../_ntnx/variables';
+@import '../../_ntnx/mixins';
+@import '../css/table';
+@import '../css/popup';
+
+body, html{
+  @include flex(center, center, column);
+  @include font;
+  background-color: $background-color-3;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+hr{
+  background-color: $border-color-3;
+  border:none;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.sct-sep{
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  background-color: $border-color-3;
+}
+
+
+
+p{font:$p;}
+h1{font:$h1; line-height:1.2; }
+h2{font:$h2; line-height:1.5; margin:0;}
+h3{font:$h3;}
+h4{font:$h4;}
+input[type='radio']{margin-right: 10px;}
+span{padding-left: 20px;}
+
+.primary{@include primary()}
+.secondary{@include secondary()}
+.col{@include flex(flex-start, flex-start, column)}
+
+header{
+  @include size(60px, 100%);
+  @include flex(center, center, row);
+  background-color: $background-color-1;
+  svg{
+    @include size(16px, 22px);
+    fill:$background-color-4;
+  }
+}
+
+article{
+  @include size(100%, 100%);
+  @include flex(flex-start, center, row);
+  padding: 30px;
+}
+
+.card{
+  background-color: white;
+  @include shadow();
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.alt{
+  color: $font-color-2;
+  font-weight: 400;
+}
+
+.ln{ line-height: 1.5;}
+.fw{ width: 100%;}
+.spc{@include flex(flex-start, space-between, row)}
+
+.section-title h3{
+  margin: 0;
+}
+
+.section-body{
+  margin-top: 10px;
+  border-left: 2px solid $border-color-3;
+  }
+
+.alignment{
+  margin-left: 28px;
+  margin-top: -10px;
+}
+
+#sidebar{
+  @include size(100%, 280px);
+}
+
+#final-price{
+  margin: 0;
+}
+
+#selection{
+  @include size(100%, 400px);
+  margin-right: 20px;
+}
