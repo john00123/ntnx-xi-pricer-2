@@ -1,14 +1,14 @@
 const popupData ={
   title :[
-    'Add/Edit Instance',
-    'Network',
+    'Add Instance',
+    'Network options',
     'Networking',
     'VMs as a Service',
     'Plan Selection'
   ],
 
   body: [
-    //0 elite customer
+    //0 add instance
     `<div class='column'
       style='width:100%; margin-bottom: 20px; padding:0;'>
           <label>Protection Policy</label>
@@ -38,6 +38,24 @@ const popupData ={
         </div>
     `,
 
+  //1 Network options
+
+`  <div class='network-option' style='width:100%'>
+    <h3><input type='checkbox' class='disable' checked> Include Network </h3>
+    <label>Num of Public IPs</label>
+    <select style="width:100%; margin:10px 0 30px 0;">
+      <option>
+        Direct Connect
+      </option>
+      <option value="[object Object]"> VPN</option>
+    </select>
+  </div>
+
+  <div class='network-option' style='width:100%'>
+    <h3><input type='checkbox' class='disable' checked> Public IPs </h3>
+    <label>Num of Public IPs</label>
+    <input type='number' class='disable-me' style="margin:10px 0 0 0"/>
+  </div>`
 
   ],
 

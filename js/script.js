@@ -14,4 +14,5 @@ $(document).ready(function(){
 
 function actions(){
   $('.edit').click(()=> $('body').append(()=>CreatePopup(0,0,0)));
+  $('.manage').click(()=> $('body').append(()=>CreatePopup(1,1,1)));
 }

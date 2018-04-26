@@ -39,7 +39,7 @@ const small =
         <span class='ln'> 300 VMs · Gold Protection</span></br>
         <span class='ln alt'> 4 VCPU, 700 Ghz </span>
       </div>
-      
+
       <div class='section-body'>
         <span class='ln'><a class='edit' href="#">Add instance</a></span>
       </div>
@@ -59,7 +59,7 @@ const small =
       </div>
 
       <div class='section-body'>
-        <span class='ln'><a href="#">Manage options</a></span>
+        <span class='ln'><a class='manage' href="#">Manage options</a></span>
       </div>
 
     </div>
