@@ -1,8 +1,8 @@
 const popupData ={
   title :[
-    'Add Instance',
+    'Add Protected VMs',
     'Network options',
-    '24/7 VMs ',
+    'Add live VMs ',
   ],
 
   body: [
@@ -42,7 +42,13 @@ const popupData ={
     <label>Connection type</label>
     <select style="width:100%; margin:10px 0 30px 0;">
       <option>
-        Direct Connect
+        100 Mpbs · Direct Connect
+      </option>
+      <option>
+        1 Gbps · Direct Connect
+      </option>
+      <option>
+        10 Gbps ·Direct Connect
       </option>
       <option value="[object Object]"> VPN</option>
     </select>

@@ -41,7 +41,7 @@ const small =
       </div>
 
       <div class='section-body'>
-        <span class='ln'><a class='edit' href="#">Add instance</a></span>
+        <span class='ln'><a class='edit' href="#">Add Protected VMs</a></span>
       </div>
     </div>
     <hr class='sct-sep'>
@@ -75,7 +75,7 @@ const small =
       </div>
 
       <div class='section-body'>
-        <span class='ln'><a class='vms' href="#">Add instance</a></span>
+        <span class='ln'><a class='vms' href="#">"Add live VMs</a></span>
       </div>
     </div>
 
@@ -100,13 +100,13 @@ const payment =
   `  <div class='card' style='margin-top: 20px;' id='selection'>
       <div class='section'>
         <div class='section-title spc'>
-          <h3> Payment method </h3>
+          <h3> Subscription plan </h3>
         </div>
         <div class='d'>
           <p class='ln'>
-          <input type='radio' name='pay' checked>  Pay as you go 12 months</p>
-          <input type='radio' name='pay'>  Pay as you go 36 months</p>
-          <input type='radio' name='pay'>  Minium Commitment</p>
+          <input type='radio' name='pay' checked>  12 months subscription</p>
+          <input type='radio' name='pay'>  36 months subscription</p>
+          <input type='radio' name='pay'>  Pay as you go</p>
 
         </div>
 
