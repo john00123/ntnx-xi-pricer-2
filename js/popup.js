@@ -48,7 +48,7 @@ const popupData ={
         1 Gbps · Direct Connect
       </option>
       <option>
-        10 Gbps ·Direct Connect
+        10 Gbps · Direct Connect
       </option>
       <option value="[object Object]"> VPN</option>
     </select>
