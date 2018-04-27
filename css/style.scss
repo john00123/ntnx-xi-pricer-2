@@ -51,7 +51,14 @@ header{
   }
 }
 
-
+kbd{
+  background-color: $light-blue-3;
+  padding: 3px 8px;
+  color:$dark-blue-3;
+  border-radius: 2px;
+  font: $p;
+  flex-grow: 1;
+}
 article{
   @include size(auto, 100%);
   @include flex(flex-start, center, row);

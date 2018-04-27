@@ -918,6 +918,15 @@ header svg {
   fill: #4D5969;
 }
 
+kbd {
+  background-color: #e9f6fe;
+  padding: 3px 8px;
+  color: #1f88de;
+  border-radius: 2px;
+  font: 400 14px/22px "nutanix_soft", san-serif;
+  flex-grow: 1;
+}
+
 article {
   height: auto;
   width: 100%;
