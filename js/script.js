@@ -2,8 +2,10 @@ const selection = [small, medium, large, custom, blank];
 
 $(document).ready(function(){
   $('.col').html(selection[4]);
-
+  $('.year-price').hide();
   $('#continue').click(()=> {
+    $('#final-price').text('$ 200,000');
+    $('.year-price').fadeIn('fast');
     if($('input:checked').val() == 0){$('.col').html(selection[0]+payment)}
     if($('input:checked').val() == 1){$('.col').html(selection[0]+payment)}
     if($('input:checked').val() == 2){$('.col').html(selection[0]+payment)}
