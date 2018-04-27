@@ -67,7 +67,7 @@ const small =
     <hr class='sct-sep'>
     <div class='section'>
       <div class='section-title spc'>
-        <h3> <input type='checkbox' checked style='margin-right:8px;'/> 24/7 VMs </h3>
+        <h3> <input type='checkbox' checked style='margin-right:8px;'/> Live VMs </h3>
       </div>
       <div class='section-body instance'>
         <span class='ln'> 300 VMs</span></br>
@@ -75,7 +75,7 @@ const small =
       </div>
 
       <div class='section-body'>
-        <span class='ln'><a class='vms' href="#">"Add live VMs</a></span>
+        <span class='ln'><a class='vms' href="#">Add live VMs</a></span>
       </div>
     </div>
 
