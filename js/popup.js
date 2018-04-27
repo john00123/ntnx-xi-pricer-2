@@ -2,9 +2,7 @@ const popupData ={
   title :[
     'Add Instance',
     'Network options',
-    'Networking',
-    'VMs as a Service',
-    'Plan Selection'
+    '24/7 VMs ',
   ],
 
   body: [
@@ -51,25 +49,64 @@ const popupData ={
   </div>
 
   <div class='network-option' style='width:100%'>
-    <h3><input type='checkbox' class='disable' checked> Public IPs </h3>
+    <h3><input type='checkbox' class='disable' style='margin-right: 8px'checked> Public IPs </h3>
     <label>Num of Public IPs</label>
     <input type='number' class='disable-me' style="margin:10px 0 0 0"/>
-  </div>`
+  </div>`,
+
+  // 24/7 VM instance
+
+  `<div class='column'
+    style='width:100%; padding:0;'>
+
+      <div class='column' style='width:100%; margin-bottom: 10px; padding:0;'>
+        <label>Num of VMs</lable>
+        <input type='number'>
+      </div>
+
+      <div class='col3'>
+
+        <div class='column'>
+          <label>VCPUs per VM</label>
+          <input type='number'>
+        </div>
+
+        <div class='column'>
+          <label>Memory per VM (Ghz) </label>
+          <input type='number'>
+        </div>
+      </div>
+
+      <div class='col3' style='margin:10px 0 0 0'>
+        <div class='column'>
+          <label>HHD per VM(TiB)</label>
+          <input type='number' margin-bottom: 0px !important;'>
+        </div>
+
+        <div class='column'>
+          <label>SDD per VM(TiB) </label>
+          <input type='number' style='margin-bottom: 0px !important;'>
+        </div>
+
+      </div>
+
+    </div>
+  `,
 
   ],
 
   footer:[
     //0
-    `<button class="secondary cancel">Cancel</button>
+    `<button class="secondary cancel" onclick='removePopup()'>Cancel</button>
      <button class="primary save" style='width:auto'> Save Changes</button>`,
 
     //1
-    `<button class="secondary cancel">Cancel</button>
+    `<button class="secondary cancel" onclick='removePopup()'>Cancel</button>
      <button class="primary save" style='width:auto'>Save Changes</button>`,
 
     //2
-    `<button class="secondary cancel">Cancel</button>
-     <button class="primary save" style='width:auto' onclick='elite()'>Save Changes</button>`,
+    `<button class="secondary cancel" onclick='removePopup()'>Cancel</button>
+     <button class="primary save" style='width:auto'>Save Changes</button>`,
   ]
 }
 

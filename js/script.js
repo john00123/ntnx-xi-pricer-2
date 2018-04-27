@@ -5,9 +5,9 @@ $(document).ready(function(){
 
   $('#continue').click(()=> {
     if($('input:checked').val() == 0){$('.col').html(selection[0]+payment)}
-    if($('input:checked').val() == 1){$('.col').html(selection[1])}
-    if($('input:checked').val() == 2){$('.col').html(selection[2])}
-    if($('input:checked').val() == 3){$('.col').html(selection[3])}
+    if($('input:checked').val() == 1){$('.col').html(selection[0]+payment)}
+    if($('input:checked').val() == 2){$('.col').html(selection[0]+payment)}
+    if($('input:checked').val() == 3){$('.col').html(selection[0]+payment)}
     actions();
   });
 });
@@ -15,4 +15,5 @@ $(document).ready(function(){
 function actions(){
   $('.edit').click(()=> $('body').append(()=>CreatePopup(0,0,0)));
   $('.manage').click(()=> $('body').append(()=>CreatePopup(1,1,1)));
+  $('.vms').click(()=> $('body').append(()=>CreatePopup(2,2,2)));
 }

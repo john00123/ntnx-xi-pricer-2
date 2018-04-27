@@ -5,7 +5,7 @@ const blank =`
     <hr>
 
     <form>
-      <h3> <input type="radio" id='config' name='select' value='0'/> Small environment</h3>
+      <h3> <input type="radio" id='config' name='select' value='0' checked/> Small environment</h3>
       <p class='alignment alt'>10 protected Virtual Machines, VPN and 1 limited time test failover every quarter</p>
 
       <h3> <input type="radio" id='config' name='select' value='1'/> Medium environment (Mid-market customer) </h3>
@@ -75,7 +75,7 @@ const small =
       </div>
 
       <div class='section-body'>
-        <span class='ln'><a href="#">Add instance</a></span>
+        <span class='ln'><a class='vms' href="#">Add instance</a></span>
       </div>
     </div>
 
@@ -104,7 +104,7 @@ const payment =
         </div>
         <div class='d'>
           <p class='ln'>
-          <input type='radio' name='pay'>  Pay as you go 12 months</p>
+          <input type='radio' name='pay' checked>  Pay as you go 12 months</p>
           <input type='radio' name='pay'>  Pay as you go 36 months</p>
           <input type='radio' name='pay'>  Minium Commitment</p>
 
