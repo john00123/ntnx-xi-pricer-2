@@ -7,19 +7,19 @@ const blank =`
     <form>
       <h3> <input type="radio" id='config' name='select' value='0' checked/> Small environment</h3>
       <p class='alignment alt'>10 protected Virtual Machines, VPN and 1 limited time test failover every quarter</p>
-
+<hr>
       <h3> <input type="radio" id='config' name='select' value='1'/> Medium environment (Mid-market customer) </h3>
       <p class='alignment alt'>50 protected Virtual Machines, 2 VMs running 24X7, VPN, 2 Public IPs and 1 test failover per quarter</p>
-
+<hr>
       <h3> <input type="radio" id='config' name='select' value='2'/> Large environment (Enterprise customer)</h3>
       <p class='alignment alt'>200 Protected Virtual Machines with 20 mission-critical VMs, 10 VMs running 24X7, Direct Connect, 10 Public IPs, and long running test failovers every quarter </p>
-
+<hr>
       <h3> <input type="radio" id='config' name='select' value='3'/> Custom Configuration</h3>
       <p class='alignment alt'>Select your own options and configurations</p>
     </form>
-    <hr>
+    <hr class='sct-sep'>
 
-    <button class='primary fw' id='continue'> Continue </button>
+    <button class='primary fw' id='continue' style='margin-top:10px;'> Continue </button>
   </div>`
 
 const small =
@@ -52,7 +52,7 @@ const small =
 
       </div>
       <div class='section-body'>
-        <span class='ln'> Direct Connect</span>
+        <span class='ln'> 100 Mbps · Direct Connect</span>
       </div>
       <div class='section-body'>
         <span class='ln'> 5 Public addresses </span>

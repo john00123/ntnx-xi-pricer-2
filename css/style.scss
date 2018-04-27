@@ -50,6 +50,13 @@ header{
     fill:$background-color-4;
   }
 }
+form > *{
+  margin-bottom: 20px;
+}
+
+form p {
+  margin-bottom: 0px;
+}
 
 kbd{
   background-color: $light-blue-3;

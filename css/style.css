@@ -918,6 +918,14 @@ header svg {
   fill: #4D5969;
 }
 
+form > * {
+  margin-bottom: 20px;
+}
+
+form p {
+  margin-bottom: 0px;
+}
+
 kbd {
   background-color: #e9f6fe;
   padding: 3px 8px;
