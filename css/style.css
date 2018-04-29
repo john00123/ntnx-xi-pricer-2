@@ -959,7 +959,7 @@ article {
 }
 
 .ln {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 .fw {
@@ -988,9 +988,14 @@ article {
   margin-top: -10px;
 }
 
+.instance {
+  margin-top: 10px;
+  padding: 3px 0;
+}
+
 .instance:hover {
   position: relative;
-  background-color: rbga(0, 0, 0, 0.02);
+  background-color: #F8F9FA;
   cursor: pointer;
   border-color: #D5DAE0;
 }
@@ -1007,8 +1012,8 @@ article {
   font-size: 25px;
   border-radius: 4pc;
   position: absolute;
-  right: 0;
-  top: 10px;
+  right: 15px;
+  top: 22px;
   font-weight: 500;
   color: white;
 }

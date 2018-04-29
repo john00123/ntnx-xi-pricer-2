@@ -84,7 +84,7 @@ article{
   font-weight: 400;
 }
 
-.ln{ line-height: 1.5;}
+.ln{ line-height: 1.75;}
 .fw{ width: 100%;}
 .spc{@include flex(flex-start, space-between, row)}
 
@@ -103,11 +103,18 @@ article{
   margin-top: -10px;
 }
 
+.instance{
+  margin-top: 10px;
+  padding: 3px 0;
+}
+
 .instance:hover{
   position: relative;
-  background-color: rbga(0,0,0,0.02);
+  background-color: $semi-white;
   cursor: pointer;
   border-color: $border-color-2;
+
+  // .alt{color:$blue-1;}
 
   &::after{
     content:'-';
@@ -118,8 +125,8 @@ article{
     font-size: 25px;
     border-radius: 4pc;
     position: absolute;
-    right: 0;
-    top:10px;
+    right: 15px;
+    top:22px;
     font-weight: 500;
     color:white;
   }
