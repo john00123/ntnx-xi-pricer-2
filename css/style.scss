@@ -66,6 +66,14 @@ kbd{
   font: $p;
   flex-grow: 1;
 }
+
+.ln kbd{
+  color: $border-color-1;
+  font-size: 18px;
+  padding: 5px;
+  background-color:transparent;
+}
+
 article{
   @include size(auto, 100%);
   @include flex(flex-start, center, row);
@@ -126,7 +134,7 @@ article{
     border-radius: 4pc;
     position: absolute;
     right: 15px;
-    top:22px;
+    top:17px;
     font-weight: 500;
     color:white;
   }

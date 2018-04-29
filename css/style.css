@@ -935,6 +935,13 @@ kbd {
   flex-grow: 1;
 }
 
+.ln kbd {
+  color: #B8BFCA;
+  font-size: 18px;
+  padding: 5px;
+  background-color: transparent;
+}
+
 article {
   height: auto;
   width: 100%;
@@ -1013,7 +1020,7 @@ article {
   border-radius: 4pc;
   position: absolute;
   right: 15px;
-  top: 22px;
+  top: 17px;
   font-weight: 500;
   color: white;
 }

@@ -31,13 +31,13 @@ const small =
 
       </div>
       <div class='section-body instance'>
-        <span class='ln'> 300 VMs · Gold Protection</span></br>
-        <span class='ln alt'> 4 VCPU, 700 Ghz </span>
+        <span class='ln'> 300 Gold policy VMs </span></br>
+        <span class='ln alt'> 4 VCPU<kbd class='interpunct'>·</kbd> 700 Ghz </span>
       </div>
 
       <div class='section-body instance'>
-        <span class='ln'> 300 VMs · Gold Protection</span></br>
-        <span class='ln alt'> 4 VCPU, 700 Ghz </span>
+        <span class='ln'> 300 Diamond policy VMs</span></br>
+        <span class='ln alt'> 4 VCPU<kbd class='interpunct'>·</kbd> 700 Ghz </span>
       </div>
 
       <div class='section-body'>
@@ -52,7 +52,7 @@ const small =
 
       </div>
       <div class='section-body'>
-        <span class='ln'> 100 Mbps · Direct Connect</span>
+        <span class='ln'> 100 Mbps <kbd class='interpunct'>·</kbd> Direct Connect</span>
       </div>
       <div class='section-body'>
         <span class='ln'> 5 Public addresses </span>
@@ -71,7 +71,7 @@ const small =
       </div>
       <div class='section-body instance'>
         <span class='ln'> 300 VMs</span></br>
-        <span class='ln alt'> 4 VCPU · 700 Ghz · 300HDD · 30 SSD </span>
+        <span class='ln alt'> 4 VCPU <kbd clas='interpunct'>·</kbd> 700 Ghz <kbd class='interpunct'>·</kbd> 300HDD <kbd class='interpunct'>·</kbd> 30 SSD </span>
       </div>
 
       <div class='section-body'>
