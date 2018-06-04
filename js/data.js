@@ -1,25 +1,32 @@
 const blank =`
   <div class='card' id='selection'>
     <h2> Welcome to Xi Pricer </h2>
-    <h3 class='alt' style='margin-top:10px 0 0 0;'>Select any configuration to begin</h3>
+    <h3 class='alt' style='margin-top:10px 0 0 0;'>Select any configuration based on your enviroment size to begin</h3>
     <hr>
 
     <form>
-      <h3> <input type="radio" id='config' name='select' value='0' checked/> Small environment</h3>
+      <h3> <input type="radio" id='config' name='select' value='0' checked/> Small enviroment</h3>
       <p class='alignment alt'>10 protected Virtual Machines, VPN and 1 limited time test failover every quarter</p>
 
-      <h3> <input type="radio" id='config' name='select' value='1'/> Medium environment (Mid-market customer) </h3>
+      <h3> <input type="radio" id='config' name='select' value='1'/> Medium environment</h3>
       <p class='alignment alt'>50 protected Virtual Machines, 2 VMs running 24X7, VPN, 2 Public IPs and 1 test failover per quarter</p>
 
-      <h3> <input type="radio" id='config' name='select' value='2'/> Large environment (Enterprise customer)</h3>
+      <h3> <input type="radio" id='config' name='select' value='2'/> Large environment</h3>
       <p class='alignment alt'>200 Protected Virtual Machines with 20 mission-critical VMs, 10 VMs running 24X7, Direct Connect, 10 Public IPs, and long running test failovers every quarter </p>
+
+      <!-- <h3> <input type="radio" id='config' name='select' value='3'/> Use Prism data</h3>
+      <p class='alignment alt'>Upload you cluster configuration to price your solution</p> -->
 
       <h3> <input type="radio" id='config' name='select' value='3'/> Custom Configuration</h3>
       <p class='alignment alt'>Select your own options and configurations</p>
     </form>
     <hr class='sct-sep'>
 
-    <button class='primary fw' id='continue' style='margin-top:10px;'> Continue </button>
+    <div class='spc'>
+      <button class='secondary'>Import Prism data</button>
+      <button class='primary' id='continue' style='margin-LEFT:10px;'> Continue </button>
+    </div>
+
   </div>`
 
 const small =
@@ -27,8 +34,7 @@ const small =
 
     <div class='section'>
       <div class='section-title spc'>
-        <h3> <input type='checkbox' checked style='margin-right:8px;'/> Disaster Recovery </h3>
-
+        <h3> <input type='checkbox' checked style='margin-right:8px;'/> Disaster Recovery</h3>
       </div>
       <div class='section-body instance'>
         <span class='ln'> 300 Gold policy VMs </span></br>
@@ -104,9 +110,9 @@ const payment =
         </div>
         <div class='d'>
           <p class='ln'>
-          <input type='radio' name='pay' checked>  12 months subscription</p>
-          <input type='radio' name='pay'>  36 months subscription</p>
-          <input type='radio' name='pay'>  Pay as you go</p>
+          <input type='radio' name='pay' checked>  12 months subscription (5% discount)</p>
+          <input type='radio' name='pay'>36 months subscription (10% discount)</p>
+          <input type='radio' name='pay'>Pay as you go</p>
 
         </div>
 

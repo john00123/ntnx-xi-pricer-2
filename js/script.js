@@ -6,6 +6,7 @@ $(document).ready(function(){
   $('#continue').click(()=> {
     $('#final-price').text('$ 200,000');
     $('.year-price').fadeIn('fast');
+    $('#sidebar').append('<hr> <button class="primary fw">Share Report</button>');
     if($('input:checked').val() == 0){$('.col').html(selection[0]+payment)}
     if($('input:checked').val() == 1){$('.col').html(selection[0]+payment)}
     if($('input:checked').val() == 2){$('.col').html(selection[0]+payment)}
