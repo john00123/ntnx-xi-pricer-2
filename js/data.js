@@ -22,7 +22,7 @@ const blank =`
     </form>
     <hr class='sct-sep'>
 
-    <div class='spc'>
+    <div class='spc' style='margin-bottom:-10px;s'>
       <button class='secondary'>Import Prism data</button>
       <button class='primary' id='continue' style='margin-LEFT:10px;'> Continue </button>
     </div>
@@ -103,7 +103,7 @@ const custom =`
   </div>`;
 
 const payment =
-  `  <div class='card' style='margin-top: 20px;' id='selection'>
+  `  <div class='card' style='margin-top: 20px;' id='payment'>
       <div class='section'>
         <div class='section-title spc'>
           <h3> Subscription plan </h3>
@@ -111,9 +111,8 @@ const payment =
         <div class='d'>
           <p class='ln'>
           <input type='radio' name='pay' checked>  12 months subscription (5% discount)</p>
-          <input type='radio' name='pay'>36 months subscription (10% discount)</p>
-          <input type='radio' name='pay'>Pay as you go</p>
-
+          <p><input type='radio' name='pay'>36 months subscription (10% discount)</p>
+          <p><input type='radio' name='pay'>Pay as you go</p>
         </div>
 
       </div>

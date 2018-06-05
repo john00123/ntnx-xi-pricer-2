@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="✂️-Diagrams" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Charts---Donut-Charts" transform="translate(-308.000000, -496.000000)" stroke-width="3">
+            <g id="Multiple-Values" transform="translate(240.000000, 322.000000)">
+                <g id="multiple-values-idle">
+                    <g id="Pie-Chart" transform="translate(68.000000, 174.000000)">
+                        <g id="Sections">
+                            <g id="Group" transform="translate(1.000000, 1.000000)">
+                                <path d="M79,0.5 C35.6456471,0.5 0.5,35.6456471 0.5,79" id="Section" stroke="#61C1DD"></path>
+                                <path d="M0.5,79 C0.5,122.354353 35.6456471,157.5 79,157.5" id="Section" stroke="#22A4F7"></path>
+                                <path d="M79,157.5 C122.354353,157.5 157.5,122.354353 157.5,79 C157.5,35.6456471 122.354353,0.5 79,0.5" id="Section" stroke="#456EE6"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

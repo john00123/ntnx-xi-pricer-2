@@ -13,6 +13,7 @@ $(document).ready(function(){
     if($('input:checked').val() == 3){$('.col').html(selection[0]+payment)}
     actions();
   });
+  $('#continue').click();
 });
 
 function actions(){
