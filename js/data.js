@@ -1,3 +1,31 @@
+const silver=`
+  <p style='margin:-15px 0 20px 0' id='policy-description'>
+  RPO: 24 hr + </br>
+  Free failover compute : None </br>
+  Free storage: 2 snapshots, 1 TB per VM </br>
+  Support: Production Support
+  </p>
+  `
+
+const gold=`
+  <p style='margin:-15px 0 20px 0' id='policy-description'>
+  RPO: 4 hr + </br>
+  Free failover compute : 12 hrs per VM/quarter </br>
+  Free storage: 1 week of snapshots, 2 TBper VM </br>
+  Support: Production Support
+  </p>
+  `
+
+const diamond=`
+  <p style='margin:-15px 0 20px 0' id='policy-description'>
+  RPO: 1 hr + </br>
+  Free failover compute : 48 hrs per VM/quarter </br>
+  Free storage: 1 month of snapshots, 5 TB per VM </br>
+  Support: Mission Critical Support
+  </p>
+  `
+
+
 const blank =`
   <div class='card' id='selection'>
     <h2> Welcome to Xi Pricer </h2>

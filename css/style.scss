@@ -173,6 +173,53 @@ kbd{
   margin-right: 20px;
 }
 
+.policy-box{
+  background-color: $border-color-3;
+  padding: 20px 15px 1px 15px;
+  border-radius: 3px;
+  p{font-size: 12px;}
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+
+#myRange{
+  border: none;
+  background-color: $border-color-2;
+  height: 2px;
+  padding:0;
+  box-shadow: 0 0 0 15px transparent;
+  position: relative;
+
+  &:hover{
+    background-color:$border-color-1;}
+  &:focus { outline: none; }
+
+  &:active{
+    outline: none;
+    &::-webkit-slider-thumb{
+      background-color: $border-color-3;
+    }
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    z-index: 20;
+    height: 12px;
+    width: 12px;
+    border-radius: 5pc;
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid $font-color-2;
+
+    @include shadow();
+  }
+
+}
 #payment{
   @include size(100%, 500px);
   p:last-child{

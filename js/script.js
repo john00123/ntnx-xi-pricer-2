@@ -13,11 +13,35 @@ $(document).ready(function(){
     if($('input:checked').val() == 3){$('.col').html(selection[0]+payment)}
     actions();
   });
+
+  //testing
   $('#continue').click();
+  $('.edit').click();
 });
 
+function protection(){
+  $("#myRange").change(function(){
+    if ($("#myRange").val() == 0){
+      $('#policy-name').text('Protection Policy: Silver');
+      $('#policy-description').html(silver);
+    }
+    if ($("#myRange").val() == 50){
+      $('#policy-name').text('Protection Policy: Gold');
+      $('#policy-description').html(gold);
+    }
+    if ($("#myRange").val() == 100){
+      $('#policy-name').text('Protection Policy: Diamond');
+      $('#policy-description').html(diamond);
+    }
+  });
+}
+
+
 function actions(){
-  $('.edit').click(()=> $('body').append(()=>CreatePopup(0,0,0)));
+  $('.edit').click(()=> {
+    $('body').append(()=>CreatePopup(0,0,0));
+    protection();
+  });
   $('.manage').click(()=> $('body').append(()=>CreatePopup(1,1,1)));
   $('.vms').click(()=> $('body').append(()=>CreatePopup(2,2,2)));
 }

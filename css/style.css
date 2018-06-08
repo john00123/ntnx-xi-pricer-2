@@ -1072,6 +1072,62 @@ kbd {
   margin-right: 20px;
 }
 
+.policy-box {
+  background-color: #F2F4F6;
+  padding: 20px 15px 1px 15px;
+  border-radius: 3px;
+}
+
+.policy-box p {
+  font-size: 12px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+
+#myRange {
+  border: none;
+  background-color: #D5DAE0;
+  height: 2px;
+  padding: 0;
+  box-shadow: 0 0 0 15px transparent;
+  position: relative;
+}
+
+#myRange:hover {
+  background-color: #B8BFCA;
+}
+
+#myRange:focus {
+  outline: none;
+}
+
+#myRange:active {
+  outline: none;
+}
+
+#myRange:active::-webkit-slider-thumb {
+  background-color: #F2F4F6;
+}
+
+#myRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  z-index: 20;
+  height: 12px;
+  width: 12px;
+  border-radius: 5pc;
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #627386;
+  box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
+}
+
 #payment {
   height: 100%;
   width: 500px;
