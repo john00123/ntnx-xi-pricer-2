@@ -97,23 +97,6 @@ kbd{
   padding: 30px;
 }
 
-.block{
-  @include size(8px, 80px);
-  margin-bottom: 20px;
-}
-.blue{
-  background-color: #22A4F7;
-}
-.red{
-  background-color:#456EE6;
-  border-radius: 2px 0 0 2px;
-}
-
-.black{
-  background-color: #61C1DD;
-
-  border-radius: 0 2px 2px 0;
-}
 
 .section-title h3{
   margin: 0;
@@ -174,10 +157,14 @@ kbd{
 }
 
 .policy-box{
+  #policy-name{
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
   background-color: $border-color-3;
   padding: 20px 15px 1px 15px;
   border-radius: 3px;
-  p{font-size: 12px;}
+  p{font-size: 14px;}
 }
 
 input[type=range] {
@@ -187,6 +174,8 @@ input[type=range] {
   /* Otherwise white in Chrome */
 }
 
+
+
 #myRange{
   border: none;
   background-color: $border-color-2;
@@ -194,6 +183,7 @@ input[type=range] {
   padding:0;
   box-shadow: 0 0 0 15px transparent;
   position: relative;
+  margin-top: 20px;
 
   &:hover{
     background-color:$border-color-1;}

@@ -15,22 +15,22 @@ $(document).ready(function(){
   });
 
   //testing
-  $('#continue').click();
-  $('.edit').click();
+  $('#policy-name').text('Gold');
+  $('#policy-description').html(gold);
 });
 
 function protection(){
   $("#myRange").change(function(){
     if ($("#myRange").val() == 0){
-      $('#policy-name').text('Protection Policy: Silver');
+      $('#policy-name').text('Silver');
       $('#policy-description').html(silver);
     }
     if ($("#myRange").val() == 50){
-      $('#policy-name').text('Protection Policy: Gold');
+      $('#policy-name').text('Gold');
       $('#policy-description').html(gold);
     }
     if ($("#myRange").val() == 100){
-      $('#policy-name').text('Protection Policy: Diamond');
+      $('#policy-name').text('Diamond');
       $('#policy-description').html(diamond);
     }
   });
