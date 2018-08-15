@@ -9,42 +9,71 @@ const popupData ={
   body: [
 
     //0 add instance
-    `<div class='column'
-      style='width:100%; margin-bottom: 20px; padding:0;'>
-        <h3> Select Protection Policy</h3>
-        <div class='policy-box'>
-          <h3 id='policy-name'>Gold</h3>
-          <p style='margin:-15px 0 20px 0' id='policy-description'>This is an explaination of the feature on this </p>
-        </div>
+    ` <div class='column' style='width:100%; margin-bottom: 0px; padding:0;'>
+        <h3>Silver</h3>
+      </div>
 
-        <input type="range" id="myRange" step="50">
-
-
-          <div class='spc fw'>
-            <h3>Silver</h3>
-            <h3 style='text-align:center'>Gold</h3>
-            <h3 style='text-align:right'>Diamond</h3>
-          </div>
-          <hr style='margin:10px 0;'>
-        </div>
-
-        <div class='column' style='width:100%; margin-bottom: 10px; padding:0;'>
+      <div class='col3'>
+        <div class='column'>
           <label>Num of VMs</lable>
           <input type='number'>
         </div>
 
-        <div class='col3'>
-
-          <div class='column'>
-            <label>VCPUs per VM</label>
-            <input type='number'>
-          </div>
-
-          <div class='column'>
-            <label>Memory per VM (Ghz) </label>
-            <input type='number'>
-          </div>
+        <div class='column'>
+          <label>VCPUs per VM</label>
+          <input type='number'>
         </div>
+
+        <div class='column'>
+          <label>Memory per VM (Ghz) </label>
+          <input type='number'>
+        </div>
+      </div>
+
+      <hr class='separator'>
+
+        <div class='column' style='width:100%; margin-bottom: 0px; padding:0;'>
+            <h3>Gold</h3>
+          </div>
+
+          <div class='col3'>
+            <div class='column'>
+              <label>Num of VMs</lable>
+              <input type='number'>
+            </div>
+
+            <div class='column'>
+              <label>VCPUs per VM</label>
+              <input type='number'>
+            </div>
+
+            <div class='column'>
+              <label>Memory per VM (Ghz) </label>
+              <input type='number'>
+            </div>
+          </div>
+
+      <hr class='separator'>
+        <div class='column' style='width:100%; margin-bottom: 0px; padding:0;'>
+            <h3>Diamond</h3>
+          </div>
+
+          <div class='col3'>
+            <div class='column'>
+              <label>Num of VMs</lable>
+              <input type='number'>
+            </div>
+
+            <div class='column'>
+              <label>VCPUs per VM</label>
+              <input type='number'>
+            </div>
+
+            <div class='column'>
+              <label>Memory per VM (Ghz) </label>
+              <input type='number'>
+            </div>
+          </div>
     `,
 
   //1 Network options

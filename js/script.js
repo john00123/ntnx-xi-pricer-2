@@ -4,9 +4,10 @@ $(document).ready(function(){
   $('.col').html(selection[4]);
   $('.year-price').hide();
   $('#continue').click(()=> {
-    $('#final-price').text('$ 200,000');
+    $('#final-price').text('$200,000');
+    $('#subfinal-price').text('$230,000 subtotal');
     $('.year-price').fadeIn('fast');
-    $('#sidebar').append('<hr> <button class="primary fw">Share Report</button>');
+    $('#sidebar').append('<hr> <button class="primary fw">Download PDF</button>');
     if($('input:checked').val() == 0){$('.col').html(selection[0]+payment)}
     if($('input:checked').val() == 1){$('.col').html(selection[0]+payment)}
     if($('input:checked').val() == 2){$('.col').html(selection[0]+payment)}
