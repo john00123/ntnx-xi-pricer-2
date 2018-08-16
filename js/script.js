@@ -8,6 +8,7 @@ $(document).ready(function(){
     $('#subfinal-price').text('$230,000 subtotal');
     $('.year-price').fadeIn('fast');
     $('#sidebar').append('<hr> <button class="primary fw">Download PDF</button>');
+    $('#sidebar').append('<button style="margin-top:10px" class="secondary fw">Run new estimate</button>');
     if($('input:checked').val() == 0){$('.col').html(selection[0]+payment)}
     if($('input:checked').val() == 1){$('.col').html(selection[0]+payment)}
     if($('input:checked').val() == 2){$('.col').html(selection[0]+payment)}
